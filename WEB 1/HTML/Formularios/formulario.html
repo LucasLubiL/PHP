@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é meu primeiro site!">
+    <meta name="keywords" content="programacao,css,html,javascript">
+    <meta name="author" content="Lucas Amaral">
+    <title>Formularios 2</title>
+</head>
+<body>
+
+    <h1>Formulário Aqui</h1>
+
+    <form>
+        <label for="campo-nome">Nome:</label>
+        <input required id="campo-nome" type="text" placeholder="Digite seu nome aqui">
+        <br><br>
+
+        <label for="campo-sobrenome">Sobrenome</label>
+        <input required id="campo-sobrenome" type="text" placeholder="Digite seu sobrenome aqui">
+        <br><br>
+
+        <label for="email">E-mail</label>
+        <input required id="email" type="email" placeholder="Digite seu email aqui">
+        <br><br>
+
+        <label for="senha">Senha</label>
+        <input required id="senha" type="password" placeholder="Digite sua senha aqui">
+        <br><br>
+        <hr>
+
+        <h2>Qual animal voce tem</h2>
+        <input type="radio" id="dog" name="animal" value="Cachorro">
+        <label for="dog">Cachorro</label>
+        <br>
+
+        <input type="radio" id="cat" name="animal" value="Gato">
+        <label for="cat">Gato</label>
+        <br>
+
+        <input type="radio" id="bird" name="animal" value="Passarinho">
+        <label for="bird">Passarinho</label>
+        <br><br>
+        <hr>
+
+        <h2>O que voce tem em casa</h2>
+
+        <input type="checkbox" id="tv" name="item1" value="Tv">
+        <label for="tv">TV</label>
+        <br>
+
+        <input type="checkbox" id="cama" name="item2" value="Cama">
+        <label for="cama">Cama</label>
+        <br>
+
+        <input type="checkbox" id="sofa" name="item3" value="Sofa">
+        <label for="sofa">Sofá</label>
+        <br><br>
+        <hr>
+ 
+        <h2>Qual sua cor?</h2>
+        <select>
+            <option value="" selected disabled>Selecione</option>
+            <option value="branco">Branco</option>
+            <option value="pardo">Pardo</option>
+            <option value="negro">Negro</option>
+            <option value="amarelo">Amarelo</option>
+        </select>
+        <br><br>
+        <hr>
+
+        <h2>Digite sua mensagem aqui</h2>
+        <textarea required rows="10" cols="50" placeholder="Digite aqui"></textarea>
+        <br><br>
+        <hr>
+  
+        <button>Clique aqui</button>
+        <input type="submit" value="Enviar Formulario">
+    
+    </form>
+    <hr>
+
+    <a href="index.html">Voltar para Principal</a>
+    
+</body>
+</html>
