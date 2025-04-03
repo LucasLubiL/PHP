@@ -23,7 +23,7 @@
                 //Persistent Data Object
                 //Persistencia de dados - manipular BD
 
-                $this->con = new PFO(
+                $this->con = new PDO(
                     $this->dbType.":host=".$this->host.";dbname=".$this->db,
                     $this->user,
                     $this->senha,
