@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Contatos</title>
+    <title>index</title>
 </head>
 <body>
 
     <?php
        
-        $conexao = mysqli_connect("localhost", "root", "vertrigo", "agenda");
-        $dados = mysqli_query($conexao, "SELECT * from contato");
+        session_start(); //Inicia a sessão área da memória dentro do servidor carrinho de compras, seus dados de conexão qualquer varíavel que voce queira criar
 
-        while($usuario = mysqli_fetch_array($dados)){
-            $contatos[] = $usuario["nome"];
-        }
+            //include_once("visao/topo.php");
+            include_once("controle/ListarContato_class.php");
+            $index = new ListarContato();
+            //atribuição de responsabilidade     o controle sabe como exibir a lista de contatos
+
+            //include_once("visao/base.php");
+
 
     ?>
+
+
 
 </body>
 </html>

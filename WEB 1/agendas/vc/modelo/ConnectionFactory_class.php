@@ -3,12 +3,12 @@
     class ConnectionFactory{
 
         public $con = null;
-        public $dbType = null;
-        public $host = null;
-        public $user = null;
-        public $senha = null;
-        public $db = null;
-        public $persistente = null;
+        public $dbType = "mysql";
+        public $host = "localhost";
+        public $user = "root";
+        public $senha = "vertrigo";
+        public $db = "agenda";
+        public $persistente = false;
 
         public function __construct($persistente = false){
             if($persistente != false){

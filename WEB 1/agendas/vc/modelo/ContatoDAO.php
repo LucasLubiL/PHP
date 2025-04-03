@@ -126,6 +126,7 @@
                 if($dados){
 
                     $c = new Contato();
+
                     $c->setId($dados["id"]);
                     $c->setNome($dados["nome"]);
                     $c->setTelefone($dados["telefone"]);
