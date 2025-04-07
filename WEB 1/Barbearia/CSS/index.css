@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-image: url(/img/background.png);
+}
+
+.topo{
+    width: 100%;
+}
+
+header{
+    margin-top: 50px;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #a4a4a4;
+    border: solid 0.5px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.home{
+    margin-left: 30px;
+}
+
+li{
+    text-decoration: none;
+    overflow: hidden;
+    border: none;
+    font-size: 23px;
+    margin-right: 3ch;
+    font-family: "Inria Serif", serif;
+    font-style: italic;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.6s ease-out, background-color 0.3s ease;
+}
+
+li:hover{
+    transition: 0.4s;
+    transform: translateY(-2px);
+}
+
+select{
+    background: transparent;
+    font-family: "Inria Serif", serif;
+    font-style: italic;
+    background-color: #a4a4a4;
+    color: #3d3d3d;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+
+.cabe{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.logo{
+    height: 180px;
+}
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+    margin-right: 50px;
+    
+}
+
+.cortesFotos{
+    padding: 0;
+    border: none;
+    margin-top: 50px;
+    background-image: url(/img/bannerCortes.png);
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    
+}
+
+.fotos{
+    display: flex;
+    width: 98%;
+    height: 800px;
+    gap: 20px;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.fotoPart {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+    transform: translateY(0);
+    transition: transform 0.6s ease-out, background-color 0.3s ease;
+}
+
+.fotoPart:hover{
+    transition: 0.4s;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fotoPart img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
