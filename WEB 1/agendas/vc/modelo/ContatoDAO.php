@@ -57,7 +57,7 @@
                 $this->con = null;*/
 
             }catch(PDOException $ex){
-                echo "Vai ser burro so". $ex->getMessage();
+                echo "deu certo nao". $ex->getMessage();
             } 
         }
 
@@ -96,9 +96,9 @@
 
                     $c = new Contato();
                     $c->setId($linha["id"]);
-                    $c->setNome($linha["Nome"]);
-                    $c->setTelefone($linha["Telefone"]);
-                    $c->setEmail($linha["Email"]);
+                    $c->setNome($linha["nome"]);
+                    $c->setTelefone($linha["telefone"]);
+                    $c->setEmail($linha["email"]);
                     $lista[] = $c;
 
                 }
@@ -125,9 +125,9 @@
                 $c = new Contato();
 
                 $c->setId($dados[0]["id"]);
-                $c->setNome($dados[0]["Nome"]);
-                $c->setTelefone($dados[0]["Telefone"]);
-                $c->setEmail($dados[0]["Email"]);
+                $c->setNome($dados[0]["nome"]);
+                $c->setTelefone($dados[0]["telefone"]);
+                $c->setEmail($dados[0]["email"]);
 
                 return $c;
 

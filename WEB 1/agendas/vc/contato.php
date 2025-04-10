@@ -18,7 +18,7 @@
 
             if($fun == "cadastrar"){
 
-                include_once("controle/CadastrarContato.php");
+                include_once("controle/cadastrarContato_class.php");
                 new CadastrarContato();
 
             }elseif($fun == "alterar"){

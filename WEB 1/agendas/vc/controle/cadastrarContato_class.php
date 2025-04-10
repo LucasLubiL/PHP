@@ -19,9 +19,9 @@
 
                     $c = new Contato();
 
-                    $c->setNome($_POST["Nome"]);
-                    $c->setEmail($_POST["Email"]);
-                    $c->setTelefone($_POST["Telefone"]);
+                    $c->setNome($_POST["nome"]);
+                    $c->setEmail($_POST["email"]);
+                    $c->setTelefone($_POST["telefone"]);
 
                     $dao = new ContatoDAO();
                     $dao->cadastrar($c);
@@ -30,11 +30,11 @@
 
                     $lista = $dao->listar();
 
-                    include_once("visao/listarContato.php");
+                    include_once("visao/listaContato.php");
 
                 }else{
 
-                    include_once("visao/formCadastroContato.php");
+                    include_once("visao/cadastroContato.php");
                     
                 }
 
