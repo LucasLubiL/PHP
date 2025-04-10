@@ -96,9 +96,9 @@
 
                     $c = new Contato();
                     $c->setId($linha["id"]);
-                    $c->setNome($linha["nome"]);
-                    $c->setTelefone($linha["telefone"]);
-                    $c->setEmail($linha["email"]);
+                    $c->setNome($linha["Nome"]);
+                    $c->setTelefone($linha["Telefone"]);
+                    $c->setEmail($linha["Email"]);
                     $lista[] = $c;
 
                 }
@@ -117,24 +117,19 @@
             try{
 
                 
-                $sql = $this->con->query("SELECT * FROM contato WHERE id = :id ");
+                $lista = $this->con->query("SELECT * FROM contato WHERE id = " . $id);
+
+                $dados = $lista->fetchAll(PDO::FETCH_ASSOC);
                 
-                $sql->bindValue(":id", $id);
+            
+                $c = new Contato();
 
-                $dados = $this->con->query($sql);
-                
-                if($dados){
+                $c->setId($dados[0]["id"]);
+                $c->setNome($dados[0]["Nome"]);
+                $c->setTelefone($dados[0]["Telefone"]);
+                $c->setEmail($dados[0]["Email"]);
 
-                    $c = new Contato();
-
-                    $c->setId($dados["id"]);
-                    $c->setNome($dados["nome"]);
-                    $c->setTelefone($dados["telefone"]);
-                    $c->setEmail($dados["email"]);
-
-                    return $c;
-
-                }
+                return $c;
 
             }catch(PDOException $ex){
 

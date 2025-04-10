@@ -9,11 +9,50 @@
 
     <?php
        
-        $conexao = mysqli_connect("localhost", "root", "vertrigo", "agenda");
-        $dados = mysqli_query($conexao, "SELECT * from contato");
+       session_start();
+       //include_once("visao/topo.php");
 
-        while($usuario = mysqli_fetch_array($dados)){
-            $contatos[] = $usuario["nome"];
+       if(isset($_GET["fun"])){
+
+            $fun = $_GET["fun"];
+
+            if($fun == "cadastrar"){
+
+                include_once("controle/CadastrarContato.php");
+                new CadastrarContato();
+
+            }elseif($fun == "alterar"){
+        
+                include_once("controle/AlterarContato_class.php");
+                new AlterarContato();
+
+            }elseif($fun == "excluir"){
+        
+                include_once("controle/ExcluirContato_class.php");
+                new ExcluirContato();
+
+            }elseif($fun == "listar"){
+        
+                include_once("controle/listarContato_class.php");
+                new listarContato();
+
+            }elseif($fun == "exibir"){
+    
+                include_once("controle/ExibirContato_class.php");
+                new ExibirContato();
+
+            }else{
+    
+                include_once("controle/listarContato_class.php");
+                new listarContato();
+
+            }
+
+        }else{
+    
+            include_once("controle/listarContato_class.php");
+            new listarContato();
+
         }
 
     ?>
