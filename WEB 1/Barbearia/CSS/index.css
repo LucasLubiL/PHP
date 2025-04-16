@@ -6,7 +6,7 @@
 
 body{
     background-image: url(/img/background\ definitivo.png);
-    
+    background-size: cover;
 }
 
 .topo{
@@ -206,7 +206,7 @@ a{
 .info-local{
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 20px;
     margin-top: 30px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -224,6 +224,16 @@ a{
 .maps-foto{
     height: 550px;
     border-radius: 10px
+}
+
+.local{
+    margin-right: 1000px;
+}
+
+iframe{
+    width: 95%;
+    height: 550px;
+    border-radius: 20px;
 }
 
 #footer{
@@ -301,4 +311,103 @@ footer{
 
 .corte{
     margin-left: 90px;
+}
+
+/*
+@media (max-width: 1366px) {
+    /* Ajustes gerais 
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cabe {
+        margin-left: 20px;
+    }
+
+    .logo {
+        height: 150px;
+    }
+
+    .cabecalho {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cortesFotos {
+        height: 400px;
+    }
+
+    .fotos {
+        width: 100%;
+        margin: 30px 0;
+        gap: 10px;
+    }
+
+    .fotoPart {
+        width: 280px;
+        height: 350px;
+    }
+
+    /* Ajustes na seção 'Quem Somos' 
+    #description .description-pai {
+        width: 80%;
+    }
+
+    #description .description-filho {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    /* Ajustes na localização 
+    #localization .localization-pai {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .local {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .maps-foto {
+        height: 450px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 450px;
+    }
+
+    /* Ajustes no footer 
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: 350px;
+    }
+
+    .footer-itens {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .redes-sociais {
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        height: 40px;
+    }
+
+    .insta {
+        height: 30px;
+    }
 }
