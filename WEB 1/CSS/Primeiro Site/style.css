@@ -1,0 +1,23 @@
+body{
+    background: green;
+}
+
+h1{
+    color: blue;
+    font-size: 88px;
+    text-align: center;
+}
+
+p{
+   color: rgb(237, 159, 32);
+   text-align: center;
+
+}
+
+.vermelho{
+    color: rgb(149, 21, 21);
+}
+
+.fonte-30{
+    font-size: 30px;
+}

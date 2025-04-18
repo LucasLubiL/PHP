@@ -1,0 +1,146 @@
+body{
+    background: rgb(89, 78, 78);
+}
+
+h1{
+    background-color: rgb(86, 143, 143);
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+p{
+    border-radius: 50px;
+    width: 30%;
+    background-color: blueviolet;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+}
+
+button{
+    margin-left: 50%;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(98, 185, 98);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: rgb(59, 176, 59);
+    color: rgb(255, 255, 255);
+    
+}
+
+.direita{
+    text-align: justify;
+    direction: rtl;
+    background-color: brown;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.ou{
+    background-color: rgb(58, 58, 172);
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-family: "Inria Serif", serif;
+} 
+
+.ai{
+    
+    font-family: "Bungee Spice", sans-serif;
+    
+}
+
+a{
+    width: 120px;
+    margin: 20px;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.a1{
+
+    background: aqua;
+
+}
+
+.a1:hover{
+
+    background: rgb(16, 121, 121);
+    color: white;
+
+}
+
+.a2{
+
+    background: rgb(155, 93, 214);
+
+}
+
+.a2:hover{
+
+    background: rgb(92, 29, 151);
+    color: white;
+
+}
+
+.a3{
+
+    background: rgb(190, 93, 93);
+
+}
+
+.a3:hover{
+
+    background: rgb(160, 34, 34);
+    color: white;
+
+}
+
+.a4{
+
+    background: rgb(97, 211, 106);
+
+}
+
+.a4:hover{
+
+    background: rgb(12, 104, 20);
+    color: white;
+
+}
+
+.a5{
+
+    background: rgb(65, 108, 201);
+
+}
+
+.a5:hover{
+
+    background: rgb(15, 58, 150);
+    color: white;
+
+}

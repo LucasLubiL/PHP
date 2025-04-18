@@ -1,0 +1,20 @@
+body{
+    background: black;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.img{
+    height: 500px;
+   
+    background-image: url(../Color/img/pexels-adrien-olichon-1257089-2387793.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
